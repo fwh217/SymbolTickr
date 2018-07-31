@@ -149,6 +149,17 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.561731" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_add.png" />
+    <BundleResource Include="Resources\tab_add%402.png" />
+    <BundleResource Include="Resources\tab_add%403.png" />
+    <BundleResource Include="Resources\tab_settings.png" />
+    <BundleResource Include="Resources\tab_settings%402.png" />
+    <BundleResource Include="Resources\tab_settings%403.png" />
+    <BundleResource Include="Resources\tab_view.png" />
+    <BundleResource Include="Resources\tab_view%402.png" />
+    <BundleResource Include="Resources\tab_view%403.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\SymbolTickr\SymbolTickr.projitems" Label="Shared" />
 </Project>
