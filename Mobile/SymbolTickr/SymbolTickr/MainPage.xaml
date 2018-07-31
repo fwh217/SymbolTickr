@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SymbolTickr"
+            xmlns:views="clr-namespace:SymbolTickr.Views"
+             x:Class="SymbolTickr.MainPage"
+            Title="Symbol Ticker"
+            BarBackgroundColor="#e0e0e0"
+            BarTextColor="#60c47c">
+    <TabbedPage.Children>
+        <views:AddSymbolPage/>
+        <views:ViewSymbolsPage/>
+        <views:SettingsPage/>
+    </TabbedPage.Children>
+</TabbedPage>
