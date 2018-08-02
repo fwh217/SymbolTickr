@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace SymbolTickr
+namespace SymbolTickr.Views
 {
 	public partial class MainPage : TabbedPage
 	{

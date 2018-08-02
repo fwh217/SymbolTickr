@@ -10,14 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\AddSymbolPage.xaml.cs">
       <DependentUpon>AddSymbolPage.xaml</DependentUpon>
@@ -30,6 +27,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\ViewSymbolsPage.xaml.cs">
       <DependentUpon>ViewSymbolsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
