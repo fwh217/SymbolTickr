@@ -59,6 +59,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -82,6 +83,11 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Ticker.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Ticker.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Ticker.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Ticker.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
