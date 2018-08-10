@@ -96,6 +96,12 @@
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\QuoteStreamer\QuoteStreamer.csproj">
+      <Project>{33A3BE35-0DE5-4CA2-8CD0-3532610F28BB}</Project>
+      <Name>QuoteStreamer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\SymbolTickr\SymbolTickr.projitems" Label="Shared" />
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

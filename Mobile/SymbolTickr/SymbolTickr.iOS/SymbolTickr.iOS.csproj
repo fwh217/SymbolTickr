@@ -167,6 +167,12 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Ticker.imageset\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Shared\QuoteStreamer\QuoteStreamer.csproj">
+      <Project>{33A3BE35-0DE5-4CA2-8CD0-3532610F28BB}</Project>
+      <Name>QuoteStreamer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\SymbolTickr\SymbolTickr.projitems" Label="Shared" />
 </Project>

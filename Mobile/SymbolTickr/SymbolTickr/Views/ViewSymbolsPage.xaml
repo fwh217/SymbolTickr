@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SymbolTickr.Views.ViewSymbolsPage"
@@ -8,7 +8,26 @@
             <On Platform="iOS" Value="tab_view.png"/>
         </OnPlatform>
     </ContentPage.Icon>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="StockTemplate">
+                
+            </DataTemplate>
+            <DataTemplate x:Key="CurrencyTemplate">
+                
+            </DataTemplate>
+            <DataTemplate x:Key="CryptoTemplate">
+                
+            </DataTemplate>
+            <local:SymbolDataTemplateSelector x:Key="SymbolDataTemplateSelector"
+                                              StockTemplate="{StaticResource StockTemplate}"
+                                              CurrencyTemplate="{StaticResource CurrencyTemplate}"
+                                              CryptoTemplate="{StaticResource CryptoTemplate}"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="2"/>
+        <ListView x:Name="SymbolsList" ItemTemplate="{StaticResource SymbolDataTemplateSelector}">
+            
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
