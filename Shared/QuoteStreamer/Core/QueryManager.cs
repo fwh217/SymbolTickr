@@ -4,15 +4,16 @@ using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using QuoteStreamer.SymbolDetails;
 namespace QuoteStreamer.Core
 {
     public static class QueryManager
     {
         private const string apiKey = "DQ547O5NWG9WUI2A";
 
-        private static JObject GetJObject(string jsonQueryUrl)
+        private static JObject getJObject(string jsonQueryUrl)
         {
-            JObjcet jObjcet = null;
+            JObject jObjcet = null;
             if(!String.IsNullOrEmpty(jsonQueryUrl))
             {
                 using (WebClient client = new WebClient())

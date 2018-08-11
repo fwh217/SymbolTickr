@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SymbolTickr.ViewModels;"
+             xmlns:core="clr-namespace:SymbolTickr.Core;"
              x:Class="SymbolTickr.Views.ViewSymbolsPage"
              Title="View">
     <ContentPage.Icon>
@@ -11,23 +13,41 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="StockTemplate">
-                
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Stock"/>
+                        <Label Text="{Binding Symbol}"/>
+                        <Label Text="{Binding CurrentPrice}"/>
+                        <Label Text="{Binding Volume}"/>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
             <DataTemplate x:Key="CurrencyTemplate">
-                
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Currency"/>
+                        <Label Text="{Binding Symbol}"/>
+                        <Label Text="{Binding CurrentPrice}"/>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
             <DataTemplate x:Key="CryptoTemplate">
-                
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Crypto"/>
+                        <Label Text="{Binding Symbol}"/>
+                        <Label Text="{Binding CurrentPrice}"/>
+                        <Label Text="{Binding Volume}"/>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
-            <local:SymbolDataTemplateSelector x:Key="SymbolDataTemplateSelector"
+            <core:SymbolDataTemplateSelector x:Key="SymbolDataTemplateSelector"
                                               StockTemplate="{StaticResource StockTemplate}"
                                               CurrencyTemplate="{StaticResource CurrencyTemplate}"
                                               CryptoTemplate="{StaticResource CryptoTemplate}"/>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ListView x:Name="SymbolsList" ItemTemplate="{StaticResource SymbolDataTemplateSelector}">
-            
-        </ListView>
+        <ListView x:Name="SymbolsListView" ItemTemplate="{StaticResource SymbolDataTemplateSelector}" ItemsSource="{Binding SymbolsList}"/>
     </ContentPage.Content>
 </ContentPage>

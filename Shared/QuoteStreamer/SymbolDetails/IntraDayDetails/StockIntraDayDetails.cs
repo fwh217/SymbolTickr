@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace QuoteStreamer.SymbolDetails.IntraDayDetails
+namespace QuoteStreamer.SymbolDetails
 {
     public class StockIntraDayDetails : IIntraDayDetails
     {

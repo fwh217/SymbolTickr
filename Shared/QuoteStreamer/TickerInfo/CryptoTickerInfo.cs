@@ -1,4 +1,6 @@
 ﻿using System;
+using QuoteStreamer.SymbolDetails;
+using QuoteStreamer.Core;
 namespace QuoteStreamer.TickerInfo
 {
     public class CryptoTickerInfo : TickerInfoBase

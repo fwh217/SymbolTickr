@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using SymbolTickr.ViewModels;
+
 namespace SymbolTickr.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -15,6 +17,7 @@ namespace SymbolTickr.Views
 		public ViewSymbolsPage ()
 		{
 			InitializeComponent ();
+            this.BindingContext = new MainPageViewModel();
 		}
 	}
 }

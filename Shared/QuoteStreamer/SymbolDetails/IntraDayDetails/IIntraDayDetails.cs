@@ -1,11 +1,8 @@
 ﻿using System;
-namespace QuoteStreamer.SymbolDetails.IntraDayDetails
+namespace QuoteStreamer.SymbolDetails
 {
-    public class IIntraDayDetails
+    interface IIntraDayDetails
     {
-        interface IIntraDayDetails
-        {
-            double CurrentPrice { get; set; }
-        }
+        double CurrentPrice { get; set; }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace QuoteStreamer.SymbolDetails.IntraDayDetails
+namespace QuoteStreamer.SymbolDetails
 {
     public class CurrencyIntraDayDetails : IIntraDayDetails
     {

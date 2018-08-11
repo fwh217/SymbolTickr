@@ -1,35 +1,32 @@
 ﻿using System;
-namespace QuoteStreamer.SymbolDetails.IntraDayDetails
+namespace QuoteStreamer.SymbolDetails
 {
-    public class CryptoIntraDayDetails
+    public class CryptoIntraDayDetails : IIntraDayDetails
     {
-        public class CryptoIntraDayDetails : IIntraDayDetails
+        private double currentPrice;
+        private double volume;
+
+        public double CurrentPrice
         {
-            private double currentPrice;
-            private double volume;
-
-            public double CurrentPrice
+            get
             {
-                get
-                {
-                    return currentPrice;
-                }
-                set
-                {
-                    currentPrice = value;
-                }
+                return currentPrice;
             }
-
-            public double Volume
+            set
             {
-                get
-                {
-                    return volume;
-                }
-                set
-                {
-                    volume = value;
-                }
+                currentPrice = value;
+            }
+        }
+
+        public double Volume
+        {
+            get
+            {
+                return volume;
+            }
+            set
+            {
+                volume = value;
             }
         }
     }
