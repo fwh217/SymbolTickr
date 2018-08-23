@@ -13,7 +13,11 @@ namespace SymbolTickr.Views
 		public MainPage()
 		{
 			InitializeComponent();
-            //new MainPageViewModel();
+            MainPageViewModel viewModel = new MainPageViewModel();
+            foreach (ContentPage page in this.Children)
+            {
+                page.BindingContext = viewModel;
+            }
 		}
 	}
 }

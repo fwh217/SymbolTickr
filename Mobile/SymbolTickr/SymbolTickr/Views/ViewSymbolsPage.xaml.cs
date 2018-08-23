@@ -17,7 +17,6 @@ namespace SymbolTickr.Views
 		public ViewSymbolsPage ()
 		{
 			InitializeComponent ();
-            this.BindingContext = new MainPageViewModel();
 		}
 	}
 }
