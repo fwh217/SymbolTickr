@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using SymbolTickr.ViewModels;
 
 namespace SymbolTickr.Views
 {
@@ -12,6 +13,11 @@ namespace SymbolTickr.Views
 		public MainPage()
 		{
 			InitializeComponent();
+            MainPageViewModel viewModel = new MainPageViewModel();
+            foreach (ContentPage page in this.Children)
+            {
+                page.BindingContext = viewModel;
+            }
 		}
 	}
 }
